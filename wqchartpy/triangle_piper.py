@@ -275,7 +275,7 @@ def plot(df,
                                 c=df.at[i, 'Color'], vmin=vmin, vmax=vmax,
                                 alpha=df.at[i, 'Alpha'],
                                 #label=TmpLabel, 
-                                edgecolors='black')
+                                edgecolors='face')
                 plt.scatter(an_x[i], an_y[i], 
                             marker=df.at[i, 'Marker'],
                             s=df.at[i, 'Size'], 
@@ -289,7 +289,7 @@ def plot(df,
                             c=df.at[i, 'Color'], vmin=vmin, vmax=vmax,
                             alpha=df.at[i, 'Alpha'],
                             #label=TmpLabel, 
-                            edgecolors='black')
+                            edgecolors='face')
                 
             else:
                 plt.scatter(cat_x[i], cat_y[i], 
@@ -305,14 +305,14 @@ def plot(df,
                             c=df.at[i, 'Color'], 
                             alpha=df.at[i, 'Alpha'],
                             label=TmpLabel, 
-                            edgecolors='black')
+                            edgecolors='face')
                 plt.scatter(d_x[i], d_y[i], 
                             marker=df.at[i, 'Marker'],
                             s=df.at[i, 'Size'], 
                             c=df.at[i, 'Color'], 
                             alpha=df.at[i, 'Alpha'],
                             #label=TmpLabel, 
-                            edgecolors='black')
+                            edgecolors='face')
                 
         except(ValueError):
             pass
